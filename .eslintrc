@@ -1,0 +1,99 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "app": true
+  },
+  "parserOptions": {
+
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "camelcase": "off",
+    "comma-dangle": [
+      "warn",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "key-spacing": [
+      "warn",
+      {
+        "singleLine": {
+          "beforeColon": true,
+          "afterColon": true
+        },
+        "multiLine": {
+          "beforeColon": true,
+          "afterColon": true,
+          "align": "colon"
+        }
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-nested-ternary": "off",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "switch-colon-spacing": [
+      "error",
+      {
+        "after": false,
+        "before": true
+      }
+    ]
+  }
+}
