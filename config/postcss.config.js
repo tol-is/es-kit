@@ -1,6 +1,6 @@
 const path = require('path');
-const stylelint = require('stylelint');
 const pcssimport = require('postcss-import');
+const responsivetype = require('postcss-responsive-type');
 const pcsspresetenv = require('postcss-preset-env');
 const pcssreporter = require('postcss-reporter');
 
@@ -15,9 +15,7 @@ module.exports = {
         src,
       ],
     }),
-    stylelint({
-      fix : true,
-    }),
+    responsivetype(),
     pcsspresetenv({
       stage    : 1,
       features : {
